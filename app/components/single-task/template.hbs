@@ -1,0 +1,7 @@
+<span class="badge">{{task.date}}</span>
+{{#if task.status}}
+  {{fa-icon 'fa-check-square-o'}}
+{{else}}
+  {{fa-icon 'fa-square-o'}}
+{{/if}}
+{{task.description}}

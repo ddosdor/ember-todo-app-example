@@ -1,0 +1,9 @@
+<div class="btn-group btn-group-justified" role="group">
+  <a type="button" class="btn btn-default" {{action 'filterTasksList' 'all'}}>Pokaż wszystkie</a>
+  <a type="button" class="btn btn-default" {{action 'filterTasksList' 'todo'}}>Tylko nowe</a>
+  <a type="button" class="btn btn-default" {{action 'filterTasksList' 'done'}}>Tylko zakończone</a>
+</div>
+<br>
+{{#each tasksList as |task|}}
+  {{single-task task=task}}
+{{/each}}

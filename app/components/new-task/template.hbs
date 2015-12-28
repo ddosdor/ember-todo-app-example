@@ -1,0 +1,7 @@
+<h5>Nowe zadanie</h5>
+<div class="input-group">
+   {{input value=newTask type="text" class="form-control" placeholder="wpisz nowe zadanie ..."}}
+   <span class="input-group-btn">
+     <button {{action 'addNewTask' newTask}} class="btn btn-primary" type="button">Dodaj</button>
+   </span>
+ </div>

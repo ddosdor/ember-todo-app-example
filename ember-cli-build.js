@@ -7,8 +7,9 @@ module.exports = function(defaults) {
     // Add options here
   });
 
-  // Use `app.import` to add additional libraries to the generated
-  // output files.
+  // import vendor libs
+  app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+  app.import('bower_components/font-awesome/css/font-awesome.min.css');
   //
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That

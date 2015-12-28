@@ -1,0 +1,13 @@
+li:hover {
+  background-color: #e8eaf6;
+}
+
+.task-done {
+  text-decoration: line-through;
+  background-color: #e0f7fa;
+  color: #004d40;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
