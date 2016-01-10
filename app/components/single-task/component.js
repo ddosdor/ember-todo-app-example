@@ -22,10 +22,6 @@ export default Ember.Component.extend({
     // add animations from Semantic UI
     this.$().hide().transition('fade');
   },
-  willDestroyElement() {
-    // add animations from Semantic UI
-    this.$().transition('fade');
-  },
   // events
   actions : {
     toggleTaskStatus() {

@@ -16,7 +16,6 @@
     "semantic-ui": "~2.1.7"
   },
   "resolutions": {
-    "ember": "^2.0.0",
-    "font-awesome": "~4.5.0"
+    "ember": "^2.0.0"
   }
 }
