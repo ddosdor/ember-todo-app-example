@@ -1,11 +1,19 @@
+<!-- new-task -->
 {{new-task}}
+<!-- /new-task -->
 
-<hr>
+<!-- manage-tasks -->
+<h6 class="ui horizontal divider header">
+  Manage tasks
+</h6>
+{{manage-tasks}}
+<!-- /manage-tasks -->
 
-<h4>Lista zadań</h4>
-
-<hr>
-
-<ul class="list-group">
-  {{tasks-list tasks=model}}    
-</ul>
+<!-- tasks-list -->
+<div class="ui segment piled">
+  <h6 class="ui horizontal divider header">
+    Your tasks
+  </h6>
+  {{tasks-list tasks=model}}
+</div>
+<!-- /tasks-list -->

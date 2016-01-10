@@ -1,7 +1,13 @@
-<span class="badge">{{task.date}}</span>
-{{#if task.status}}
-  {{fa-icon 'fa-check-square-o'}}
-{{else}}
-  {{fa-icon 'fa-square-o'}}
-{{/if}}
-{{task.description}}
+<td width="5%" class="task-status" {{ action 'toggleTaskStatus'}}>
+  {{#if task.isCompleted}}
+    <div class="ui green ribbon label">Done</div>
+  {{else}}
+    <div class="ui ribbon label">New</div>
+  {{/if}}
+</td>
+<td>{{task.description}}</td>
+<td width="5%">
+  <button class="ui red small icon button">
+    Delete
+  </button>
+</td>

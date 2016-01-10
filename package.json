@@ -38,6 +38,8 @@
     "ember-data-filter": "1.13.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "emberfire": "1.6.3"
+    "ember-localstorage-adapter": "0.5.5",
+    "emberfire": "1.6.3",
+    "semantic-ui-ember": "0.9.2"
   }
 }

@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:globals', 'Unit | Service | globals', {
+moduleFor('service:events-emitter', 'Unit | Service | events emitter', {
   // Specify the other units that are required for this test.
   // needs: ['service:foo']
 });

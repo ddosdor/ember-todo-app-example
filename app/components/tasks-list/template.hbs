@@ -1,9 +1,9 @@
-<div class="btn-group btn-group-justified" role="group">
-  <a type="button" class="btn btn-default" {{action 'filterTasksList' 'all'}}>Pokaż wszystkie</a>
-  <a type="button" class="btn btn-default" {{action 'filterTasksList' 'todo'}}>Tylko nowe</a>
-  <a type="button" class="btn btn-default" {{action 'filterTasksList' 'done'}}>Tylko zakończone</a>
-</div>
-<br>
-{{#each tasksList as |task|}}
-  {{single-task task=task}}
-{{/each}}
+<table class="ui celled table">
+  <tbody>
+    {{#each tasksList as |task|}}
+      {{single-task task=task}}
+    {{else}}
+      <tr><td colspan="4"><div class="ui center aligned">no results</div></td></tr>
+    {{/each}}
+  </tbody>
+</table>

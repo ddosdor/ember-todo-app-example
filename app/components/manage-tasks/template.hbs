@@ -1,0 +1,15 @@
+<a class="item active" data-filter-type="all" {{action 'filterTasksList' 'all'}}>All <div class="floating ui label">{{countAll}}</div></a>
+<a class="item" data-filter-type="todo" {{action 'filterTasksList' 'todo'}}>New <div class="floating ui blue label">{{countNew}}</div></a>
+<a class="item" data-filter-type="done" {{action 'filterTasksList' 'done'}}>Done <div class="floating ui green label">{{countDone}}</div></a>
+<div class="right menu">
+  <div class="item">
+    <div class="ui red button" {{action 'deleteAllTasks'}}>
+      Delete all
+    </div>
+  </div>
+  <div class="item">
+    <div class="ui red button" {{action 'deleteDoneTasks'}}>
+      Delete done
+    </div>
+  </div>
+</div>
