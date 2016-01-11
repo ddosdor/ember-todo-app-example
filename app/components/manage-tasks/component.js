@@ -13,7 +13,7 @@ export default Ember.Component.extend({
     this._super();
   },
   // component
-  classNames : ['ui','pointing','menu'],
+  classNames : ['ui','pointing','menu','stackable'],
 
   isRefresh : false,
   refresh() {
