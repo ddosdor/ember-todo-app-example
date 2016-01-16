@@ -1,0 +1,9 @@
+{{#if isEditing}}
+  <div class="ui fluid action input focus remove-line-trough">
+    {{input type="text" value=description enter="editTaskDecription"}}
+    <div class="ui primary button" {{action 'editTaskDecription'}}>Save</div>
+    <div class="ui yellow button" {{action 'cancelEditing'}}>Cancel</div>
+  </div>
+{{else}}
+  {{description}}
+{{/if}}

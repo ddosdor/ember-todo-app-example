@@ -5,7 +5,7 @@
     <div class="ui ribbon label">New</div>
   {{/if}}
 </td>
-<td>{{task.description}}</td>
+<td>{{single-task-description description=task.description id=task.id}}</td>
 <td width="5%">
   <button class="ui red small icon button" {{action 'deleteSingleTask'}}>
     Delete

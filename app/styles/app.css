@@ -8,6 +8,10 @@ li:hover {
   color: #004d40;
 }
 
+.remove-line-trough {
+  text-decoration: none !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
