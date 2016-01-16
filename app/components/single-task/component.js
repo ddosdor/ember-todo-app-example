@@ -41,6 +41,17 @@ export default Ember.Component.extend({
               this.get('dispatcher').publish('refreshTasksList');
             });
         });
+    },
+    deleteSingleTask() {
+      let store = this.get('store'),
+          task_id = this.get('task.id');
+
+      store.findRecord('task', task_id)
+        .then((task) => {
+          task.destroyRecord();
+          // trigger action in subscribers
+          this.get('dispatcher').publish('refreshTasksList');
+        });
     }
   }
 });

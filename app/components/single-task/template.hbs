@@ -1,4 +1,4 @@
-<td width="5%" class="task-status" {{ action 'toggleTaskStatus'}}>
+<td width="5%" class="task-status" {{action 'toggleTaskStatus'}}>
   {{#if task.isCompleted}}
     <div class="ui green ribbon label">Done</div>
   {{else}}
@@ -7,7 +7,7 @@
 </td>
 <td>{{task.description}}</td>
 <td width="5%">
-  <button class="ui red small icon button">
+  <button class="ui red small icon button" {{action 'deleteSingleTask'}}>
     Delete
   </button>
 </td>

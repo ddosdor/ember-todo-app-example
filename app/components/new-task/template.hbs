@@ -1,5 +1,5 @@
 <div class="ui right labeled fluid action input">
   <div class="ui label">New task</div>
-  {{input value=newTask type="text" class="form-control" placeholder="wpisz nowe zadanie ..." action="addNewTask"}}
+  {{input value=newTask type="text" class="form-control" placeholder="wpisz nowe zadanie ..." enter="addNewTask"}}
   <button {{action 'addNewTask' newTask}} class="ui green button" type="button">Add</button>
 </div>

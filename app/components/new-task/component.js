@@ -8,16 +8,18 @@ export default Ember.Component.extend({
   // events / actions
   actions : {
     addNewTask(newTask) {
-      let new_task = this.get('store').createRecord('task', {
-        description : newTask,
-        isCompleted : false
-      });
-
-      new_task.save()
-        .then(() => {
-          this.get('dispatcher').publish('refreshTasksList');
-          this.set('newTask', '');
+      if(newTask.length > 0) {
+        let new_task = this.get('store').createRecord('task', {
+          description : newTask,
+          isCompleted : false
         });
+
+        new_task.save()
+          .then(() => {
+            this.get('dispatcher').publish('refreshTasksList');
+            this.set('newTask', '');
+          });        
+      }
     }
   }
 });
