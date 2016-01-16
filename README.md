@@ -1,7 +1,10 @@
-# Todo-app
+# Ember 2.0 Todo-app example
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is my first example application written in Ember 2.0.
+
+## Demo
+
+[Demo](http://embertodoapp.demo.meandjs.com)
 
 ## Prerequisites
 
