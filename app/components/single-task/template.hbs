@@ -6,8 +6,14 @@
   {{/if}}
 </td>
 <td>{{single-task-description description=task.description id=task.id}}</td>
-<td width="5%">
-  <button class="ui red small icon button" {{action 'deleteSingleTask'}}>
-    Delete
-  </button>
+<td width="10%" align="center">
+  <div class="ui buttons">
+    {{#if task.isCompleted}}
+      <button class="ui small green button" {{action 'toggleTaskStatus'}}>Undone</button>
+    {{else}}
+      <button class="ui small button" {{action 'toggleTaskStatus'}}>Done</button>
+    {{/if}}
+    <div class="or"></div>
+    <button class="ui red small button" {{action 'deleteSingleTask'}}>Delete</button>
+  </div>
 </td>

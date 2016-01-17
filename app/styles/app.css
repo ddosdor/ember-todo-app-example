@@ -3,15 +3,12 @@ li:hover {
 }
 
 .task-done {
-  text-decoration: line-through;
   background-color: #e0f7fa;
   color: #004d40;
 }
-
-.remove-line-trough {
-  text-decoration: none !important;
+.align-center {
+  align: center;
 }
-
 .cursor-pointer {
   cursor: pointer;
 }
